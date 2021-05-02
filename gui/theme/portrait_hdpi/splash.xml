@@ -21,7 +21,7 @@
 		<variable name="background_color" value="#000000"/>
 		<variable name="header_color" value="#000000"/>
 		<variable name="accent_color" value="#777777"/>
-		<variable name="disclaimer_color" value="#1a2724" />
+		<variable name="disclaimer_color" value="#188878" />
 	</variables>
 
 	<pages>

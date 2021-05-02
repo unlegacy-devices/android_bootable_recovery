@@ -42,6 +42,48 @@
 			<image resource="main_button_install"/>
 		</style>
 
+		<style name="main_button_wipe">
+			<highlight color="%highlight_color%"/>
+			<font resource="font_l" color="%text_button_color%"/>
+			<image resource="main_button_wipe"/>
+		</style>
+
+		<style name="main_button_backup">
+			<highlight color="%highlight_color%"/>
+			<font resource="font_l" color="%text_button_color%"/>
+			<image resource="main_button_backup"/>
+		</style>
+
+		<style name="main_button_restore">
+			<highlight color="%highlight_color%"/>
+			<font resource="font_l" color="%text_button_color%"/>
+			<image resource="main_button_restore"/>
+		</style>
+
+		<style name="main_button_mount">
+			<highlight color="%highlight_color%"/>
+			<font resource="font_l" color="%text_button_color%"/>
+			<image resource="main_button_mount"/>
+		</style>
+
+		<style name="main_button_settings">
+			<highlight color="%highlight_color%"/>
+			<font resource="font_l" color="%text_button_color%"/>
+			<image resource="main_button_settings"/>
+		</style>
+
+		<style name="main_button_advanced">
+			<highlight color="%highlight_color%"/>
+			<font resource="font_l" color="%text_button_color%"/>
+			<image resource="main_button_advanced"/>
+		</style>
+
+		<style name="main_button_reboot">
+			<highlight color="%highlight_color%"/>
+			<font resource="font_l" color="%text_button_color%"/>
+			<image resource="main_button_reboot"/>
+		</style>
+
 		<style name="main_button">
 			<highlight color="%highlight_color%"/>
 			<font resource="font_l" color="%text_button_color%"/>
@@ -204,13 +246,13 @@
 
 			<text style="text_l">
 				<placement x="%col1_x_header%" y="%row3_header_y%"/>
-				<text>{@twrp_header=JDCTeam TWRP}</text>
+				<text>TWRP - %tw_version%</text>
 			</text>
 
 			<text style="text_m">
 				<condition var1="tw_no_cpu_temp" var2="0"/>
 				<placement x="%col1_x_header%" y="%row4_header_y%"/>
-				<text>%tw_version%</text>
+				<text>Brought to you by JDCTeam</text>
 			</text>
 
 			<button style="main_button_install">
@@ -226,51 +268,100 @@
 				<text>{@install_btn=Install}</text>
 			</text>
 			<text style="text_desc">
-				<placement x="230" y="490"/>
+				<placement x="230" y="510"/>
 				<text>Flash em all!</text>
 			</text>
 
-			<button style="main_button">
+			<button style="main_button_wipe">
 				<placement x="%center_x%" y="%row2a_y%"/>
-				<text>{@wipe_btn=Wipe}</text>
 				<action function="page">wipe</action>
 			</button>
+			<text style="text_l">
+				<placement x="730" y="410"/>
+				<text>{@wipe_btn=Wipe}</text>
+			</text>
+			<text style="text_desc">
+				<placement x="730" y="510"/>
+				<text>Wipe em all!</text>
+			</text>
 
-			<button style="main_button">
+			<button style="main_button_backup">
 				<placement x="%indent%" y="%row8_y%"/>
-				<text>{@backup_btn=Backup}</text>
 				<action function="page">backup</action>
 			</button>
+			<text style="text_l">
+				<placement x="230" y="770"/>
+				<text>{@backup_btn=Backup}</text>
+			</text>
+			<text style="text_desc">
+				<placement x="230" y="870"/>
+				<text>Save your data</text>
+			</text>
 
-			<button style="main_button">
+			<button style="main_button_restore">
 				<placement x="%center_x%" y="%row8_y%"/>
-				<text>{@restore_btn=Restore}</text>
 				<action function="page">restore</action>
 			</button>
+			<text style="text_l">
+				<placement x="730" y="770"/>
+				<text>{@restore_btn=Restore}</text>
+			</text>
+			<text style="text_desc">
+				<placement x="730" y="870"/>
+				<text>Restore your data</text>
+			</text>
 
-			<button style="main_button">
+			<button style="main_button_mount">
 				<placement x="%indent%" y="%row13a_y%"/>
-				<text>{@mount_btn=Mount}</text>
 				<action function="page">mount</action>
 			</button>
+			<text style="text_l">
+				<placement x="230" y="1110"/>
+				<text>{@mount_btn=Mount}</text>
+			</text>
+			<text style="text_desc">
+				<placement x="230" y="1210"/>
+				<text>Mount partitions</text>
+			</text>
 
-			<button style="main_button">
+			<button style="main_button_settings">
 				<placement x="%center_x%" y="%row13a_y%"/>
-				<text>{@settings_btn=Settings}</text>
 				<action function="page">settings</action>
 			</button>
+			<text style="text_l">
+				<placement x="730" y="1110"/>
+				<text>{@settings_btn=Settings}</text>
+			</text>
+			<text style="text_desc">
+				<placement x="730" y="1210"/>
+				<text>Configure TWRP</text>
+			</text>
 
-			<button style="main_button">
+			<button style="main_button_advanced">
 				<placement x="%indent%" y="%row19_y%"/>
-				<text>{@advanced_btn=Advanced}</text>
 				<action function="page">advanced</action>
 			</button>
+			<text style="text_l">
+				<placement x="230" y="1470"/>
+				<text>{@advanced_btn=Advanced}</text>
+			</text>
+			<text style="text_desc">
+				<placement x="230" y="1570"/>
+				<text>Not a noob?</text>
+			</text>
 
-			<button style="main_button">
+			<button style="main_button_reboot">
 				<placement x="%center_x%" y="%row19_y%"/>
-				<text>{@reboot_btn=Reboot}</text>
 				<action function="page">reboot</action>
 			</button>
+			<text style="text_l">
+				<placement x="730" y="1470"/>
+				<text>{@reboot_btn=Reboot}</text>
+			</text>
+			<text style="text_desc">
+				<placement x="730" y="1570"/>
+				<text>Not a noob?</text>
+			</text>
 		</page>
 
 		<page name="install">

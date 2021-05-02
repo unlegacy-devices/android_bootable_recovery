@@ -26,6 +26,13 @@
 		<image name="logo" filename="logo" retainaspect="1"/>
 		<image name="main_button" filename="main_button"/>
 		<image name="main_button_install" filename="main_button_install"/>
+		<image name="main_button_wipe" filename="main_button_wipe"/>
+		<image name="main_button_backup" filename="main_button_backup"/>
+		<image name="main_button_restore" filename="main_button_restore"/>
+		<image name="main_button_mount" filename="main_button_mount"/>
+		<image name="main_button_settings" filename="main_button_settings"/>
+		<image name="main_button_advanced" filename="main_button_advanced"/>
+		<image name="main_button_reboot" filename="main_button_reboot"/>
 		<image name="main_button_half_height" filename="main_button_half_height"/>
 		<image name="main_button_half_height_full_width" filename="main_button_half_height_full_width"/>
 		<image name="unlock_button" filename="unlock_button" />
