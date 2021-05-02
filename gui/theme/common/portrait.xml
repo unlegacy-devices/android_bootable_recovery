@@ -21,6 +21,10 @@
 			<font resource="font_s" color="%text_color%"/>
 		</style>
 
+		<style name="text_desc">
+			<font resource="font_s" color="#2e7e6c"/>
+		</style>
+
 		<style name="input">
 			<background color="%background_color%"/>
 			<cursor color="%accent_color%" hasfocus="1" width="%input_line_width%"/>
@@ -30,6 +34,12 @@
 		<style name="checkbox">
 			<font resource="font_m" color="%text_color%"/>
 			<image checked="checkbox_true" unchecked="checkbox_false"/>
+		</style>
+
+		<style name="main_button_install">
+			<highlight color="%highlight_color%"/>
+			<font resource="font_l" color="%text_button_color%"/>
+			<image resource="main_button_install"/>
 		</style>
 
 		<style name="main_button">
@@ -203,15 +213,22 @@
 				<text>%tw_version%</text>
 			</text>
 
-			<button style="main_button">
+			<button style="main_button_install">
 				<placement x="%indent%" y="%row2a_y%"/>
-				<text>{@install_btn=Install}</text>
 				<actions>
 					<action function="queueclear"/>
 					<action function="set">tw_selectimage=0</action>
 					<action function="page">install</action>
 				</actions>
 			</button>
+			<text style="text_l">
+				<placement x="230" y="410"/>
+				<text>{@install_btn=Install}</text>
+			</text>
+			<text style="text_desc">
+				<placement x="230" y="490"/>
+				<text>Flash em all!</text>
+			</text>
 
 			<button style="main_button">
 				<placement x="%center_x%" y="%row2a_y%"/>
